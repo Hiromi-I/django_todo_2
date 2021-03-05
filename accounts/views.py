@@ -6,5 +6,5 @@ class LoginView(_LoginView):
     template_name = 'accounts/login.html'
 
 
-class HomeViw(TemplateView):
+class HomeView(TemplateView):
     template_name = 'accounts/home.html'
