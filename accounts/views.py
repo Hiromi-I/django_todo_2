@@ -3,11 +3,11 @@ from django.views.generic import TemplateView
 
 
 class LoginView(_LoginView):
-    template_name = 'accounts/login.html'
+    template_name = "accounts/login.html"
 
 
 class HomeView(TemplateView):
-    template_name = 'accounts/home.html'
+    template_name = "accounts/home.html"
 
 
 class LogoutView(_LogoutView):
