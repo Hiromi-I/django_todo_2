@@ -4,5 +4,10 @@
 
 {% block contents %}
   <h1>ログイン画面</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button>ログイン</button>
+  </form>
 {% endblock contents %}
 
