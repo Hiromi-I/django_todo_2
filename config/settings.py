@@ -132,3 +132,4 @@ INTERNAL_IPS = env.list('ALLOWED_HOSTS')
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
 LOGIN_REDIRECT_URL = 'accounts:home'
+LOGOUT_REDIRECT_URL = 'accounts:login'
