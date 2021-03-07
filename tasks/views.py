@@ -7,3 +7,7 @@ class ListView(TemplateView):
 
 class CreateView(TemplateView):
     template_name = "tasks/create.html"
+
+
+class UpdateView(TemplateView):
+    template_name = "tasks/update.html"
