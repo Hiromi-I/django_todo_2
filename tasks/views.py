@@ -11,3 +11,7 @@ class CreateView(TemplateView):
 
 class UpdateView(TemplateView):
     template_name = "tasks/update.html"
+
+
+class DeleteView(TemplateView):
+    template_name = "tasks/delete.html"
