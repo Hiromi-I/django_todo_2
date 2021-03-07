@@ -1,9 +1,9 @@
 from django.views.generic import TemplateView
 
 
-class TasksListView(TemplateView):
+class ListView(TemplateView):
     template_name = "tasks/list.html"
 
 
-class TasksCreateView(TemplateView):
+class CreateView(TemplateView):
     template_name = "tasks/create.html"
