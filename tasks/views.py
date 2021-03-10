@@ -1,12 +1,24 @@
-from django.views.generic import TemplateView
+from django.http.response import HttpResponse
+from django.views.generic import TemplateView, CreateView as _CreateView
+from django.urls import reverse_lazy
+from .forms import TaskCreationForm
+from .models import Task
 
 
 class ListView(TemplateView):
     template_name = "tasks/list.html"
 
 
-class CreateView(TemplateView):
+class CreateView(_CreateView):
     template_name = "tasks/create.html"
+    model = Task
+    form_class = TaskCreationForm
+    success_url = reverse_lazy("tasks:list")
+
+    def form_valid(self, form: TaskCreationForm) -> HttpResponse:
+        form.instance.author = self.request.user
+        form.instance.is_complete = False
+        return super().form_valid(form)
 
 
 class UpdateView(TemplateView):
