@@ -4,5 +4,8 @@
 
 {% block contents %}
   <h1>タスク一覧</h1>
+  {% for task in task_list %}
+    {{ task.title }}
+  {% endfor %}
 {% endblock contents %}
 

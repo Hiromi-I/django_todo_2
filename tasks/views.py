@@ -1,12 +1,17 @@
 from django.http.response import HttpResponse
-from django.views.generic import TemplateView, CreateView as _CreateView
+from django.views.generic import (
+    TemplateView,
+    CreateView as _CreateView,
+    ListView as _ListView,
+)
 from django.urls import reverse_lazy
 from .forms import TaskCreationForm
 from .models import Task
 
 
-class ListView(TemplateView):
+class ListView(_ListView):
     template_name = "tasks/list.html"
+    model = Task
 
 
 class CreateView(_CreateView):
