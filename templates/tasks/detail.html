@@ -4,5 +4,11 @@
 
 {% block contents %}
   <h1>タスク詳細</h1>
+  <p>{{ task.title }}</p>
+  <p>{{ task.description }}</p>
+  <input type="checkbox" {% if task.is_complete %}checked{% endif %} disabled /> 完了済み
+
+  <a href="{% url 'tasks:update' task.pk %}">編集</a>
+  <a href="{% url 'tasks:delete' task.pk %}">削除</a>
 {% endblock contents %}
 

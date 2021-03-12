@@ -3,6 +3,7 @@ from django.views.generic import (
     TemplateView,
     CreateView as _CreateView,
     ListView as _ListView,
+    DetailView as _DetailView,
 )
 from django.urls import reverse_lazy
 from .forms import TaskCreationForm
@@ -34,5 +35,6 @@ class DeleteView(TemplateView):
     template_name = "tasks/delete.html"
 
 
-class DetailView(TemplateView):
+class DetailView(_DetailView):
     template_name = "tasks/detail.html"
+    model = Task
