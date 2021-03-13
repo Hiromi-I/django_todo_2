@@ -4,9 +4,10 @@ from django.views.generic import (
     CreateView as _CreateView,
     ListView as _ListView,
     DetailView as _DetailView,
+    UpdateView as _UpdateView,
 )
-from django.urls import reverse_lazy
-from .forms import TaskCreationForm
+from django.urls import reverse_lazy, reverse
+from .forms import TaskCreationForm, TaskUpdateForm
 from .models import Task
 
 
@@ -27,8 +28,17 @@ class CreateView(_CreateView):
         return super().form_valid(form)
 
 
-class UpdateView(TemplateView):
+class UpdateView(_UpdateView):
     template_name = "tasks/update.html"
+    model = Task
+    form_class = TaskUpdateForm
+
+    def form_valid(self, form: TaskUpdateForm) -> HttpResponse:
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+    def get_success_url(self) -> str:
+        return reverse("tasks:detail", kwargs={"pk": self.object.pk})
 
 
 class DeleteView(TemplateView):

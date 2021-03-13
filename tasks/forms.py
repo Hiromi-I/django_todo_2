@@ -6,3 +6,9 @@ class TaskCreationForm(ModelForm):
     class Meta:
         model = Task
         fields = ("title", "description")
+
+
+class TaskUpdateForm(ModelForm):
+    class Meta:
+        model = Task
+        fields = ("title", "description", "is_complete")
