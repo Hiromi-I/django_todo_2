@@ -6,6 +6,8 @@
   <h1>タスク一覧</h1>
   {% for task in task_list %}
     <a href="{% url 'tasks:detail' task.pk %}">{{ task.title }}</a>
+  {% empty %}
+    <p>現在、作成されたタスクはございません。</p>
   {% endfor %}
 {% endblock contents %}
 
