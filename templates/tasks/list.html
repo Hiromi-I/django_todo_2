@@ -9,5 +9,6 @@
   {% empty %}
     <p>現在、作成されたタスクはございません。</p>
   {% endfor %}
+  <p><a href="{% url 'tasks:create' %}">タスクを作成</a></p>
 {% endblock contents %}
 
