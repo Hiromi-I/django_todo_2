@@ -5,6 +5,7 @@ from django.views.generic import (
     ListView as _ListView,
     DetailView as _DetailView,
     UpdateView as _UpdateView,
+    DeleteView as _DeleteView,
 )
 from django.urls import reverse_lazy, reverse
 from .forms import TaskCreationForm, TaskUpdateForm
@@ -41,8 +42,10 @@ class UpdateView(_UpdateView):
         return reverse("tasks:detail", kwargs={"pk": self.object.pk})
 
 
-class DeleteView(TemplateView):
+class DeleteView(_DeleteView):
     template_name = "tasks/delete.html"
+    model = Task
+    success_url = reverse_lazy("tasks:list")
 
 
 class DetailView(_DetailView):
