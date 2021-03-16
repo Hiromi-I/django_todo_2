@@ -1,0 +1,45 @@
+- model: accounts.customuser
+  pk: 1
+  fields:
+    password: pbkdf2_sha256$260000$w17blcEBZBlK6VhGW8gGHk$uNub+HGj3gtGiZGCVTGtrzaGce6yG8A8g86BKVNomcQ=
+    last_login: 2021-03-14 13:00:53.722040+00:00
+    is_superuser: true
+    username: hiromi
+    first_name: ''
+    last_name: ''
+    email: ''
+    is_staff: true
+    is_active: true
+    date_joined: 2021-03-05 13:44:18.660152+00:00
+    groups: []
+    user_permissions: []
+- model: accounts.customuser
+  pk: 2
+  fields:
+    password: pbkdf2_sha256$260000$zDsBQZWsQeroSnWSRnvBm9$un8fY6/dN9r7UX3P6Pa+6HYfMC2ep0JWU7NKYqpa9AI=
+    last_login: null
+    is_superuser: false
+    username: test-user2
+    first_name: ''
+    last_name: ''
+    email: ''
+    is_staff: false
+    is_active: true
+    date_joined: 2021-03-15 10:01:25.001391+00:00
+    groups: []
+    user_permissions: []
+- model: accounts.customuser
+  pk: 3
+  fields:
+    password: pbkdf2_sha256$260000$jMU4OpYj86GmrgQ0YUS5gL$9xyEHXdGdAOlwdSjCu2zi+pD9UeQb0Jy3PpqcZWDEVg=
+    last_login: null
+    is_superuser: false
+    username: test-user3
+    first_name: ''
+    last_name: ''
+    email: ''
+    is_staff: false
+    is_active: true
+    date_joined: 2021-03-15 10:01:44+00:00
+    groups: []
+    user_permissions: []
