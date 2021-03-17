@@ -16,6 +16,9 @@ class ListView(_ListView):
     template_name = "tasks/list.html"
     model = Task
 
+    def get_queryset(self):
+        return Task.objects.filter(author=self.request.user)
+
 
 class CreateView(_CreateView):
     template_name = "tasks/create.html"
