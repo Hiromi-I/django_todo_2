@@ -4,7 +4,7 @@
     password: pbkdf2_sha256$260000$w17blcEBZBlK6VhGW8gGHk$uNub+HGj3gtGiZGCVTGtrzaGce6yG8A8g86BKVNomcQ=
     last_login: 2021-03-14 13:00:53.722040+00:00
     is_superuser: true
-    username: hiromi
+    username: test-user1
     first_name: ''
     last_name: ''
     email: ''
