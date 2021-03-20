@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}タスク削除{% endblock title %}
+
+{% block contents %}
+  <h1>タスク削除</h1>
+  <p>削除してもよろしいですか？</p>
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit">削除</button>
+  </form>
+{% endblock contents %}
+

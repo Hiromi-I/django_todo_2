@@ -1,0 +1,302 @@
+# ユーザーその01
+- model: tasks.task
+  pk: 1
+  fields:
+    title: "歯磨き"
+    description: "特になし"
+    author: 1
+    is_complete: false
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 2
+  fields:
+    title: "顔を洗う"
+    description: "特になし"
+    author: 1
+    is_complete: true
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 3
+  fields:
+    title: "朝ごはん"
+    description: "サラダとフルーツグラノーラ"
+    author: 1
+    is_complete: false
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 4
+  fields:
+    title: "筋トレ"
+    description: "プッシュアップ10回・クランチ10回"
+    author: 1
+    is_complete: true
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 5
+  fields:
+    title: "読書"
+    description: "目標20分"
+    author: 1
+    is_complete: false
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 6
+  fields:
+    title: "コーヒーを飲む"
+    description: "カフェインを接種"
+    author: 1
+    is_complete: true
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 7
+  fields:
+    title: "薬を飲む"
+    description: "花粉症の薬、ビタミンサプリ"
+    author: 1
+    is_complete: false
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 8
+  fields:
+    title: "ゴミを出す"
+    description: "燃えるゴミ"
+    author: 1
+    is_complete: true
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 9
+  fields:
+    title: "洗い物"
+    description: "朝ごはんの後片付け"
+    author: 1
+    is_complete: false
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 10
+  fields:
+    title: "着替え"
+    description: "特になし"
+    author: 1
+    is_complete: true
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 11
+  fields:
+    title: "洗濯"
+    description: "特になし"
+    author: 1
+    is_complete: false
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 12
+  fields:
+    title: "ニュースチェック"
+    description: "特になし"
+    author: 1
+    is_complete: true
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+
+# ユーザーその02
+- model: tasks.task
+  pk: 13
+  fields:
+    title: "材料チェック"
+    description: "クックパッドで晩ご飯の材料をチェック"
+    author: 2
+    is_complete: false
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 14
+  fields:
+    title: "買い物"
+    description: "スーパーで買い物"
+    author: 2
+    is_complete: true
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 15
+  fields:
+    title: "台所の片付け"
+    description: "料理の前に片付け"
+    author: 2
+    is_complete: false
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 16
+  fields:
+    title: "皮むき"
+    description: "野菜の皮むき"
+    author: 2
+    is_complete: true
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 17
+  fields:
+    title: "下茹で"
+    description: "アク抜き"
+    author: 2
+    is_complete: false
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 18
+  fields:
+    title: "味付け"
+    description: "塩胡椒"
+    author: 2
+    is_complete: true
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 19
+  fields:
+    title: "スープの調理"
+    description: "コーンスープ"
+    author: 2
+    is_complete: false
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 20
+  fields:
+    title: "サラダの盛り付け"
+    description: "特になし"
+    author: 2
+    is_complete: true
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 21
+  fields:
+    title: "配膳"
+    description: "特になし"
+    author: 2
+    is_complete: false
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+
+# ユーザーその03
+- model: tasks.task
+  pk: 22
+  fields:
+    title: "腕立て"
+    description: "10回3セット"
+    author: 3
+    is_complete: false
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 23
+  fields:
+    title: "腹筋"
+    description: "10回3セット"
+    author: 3
+    is_complete: true
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 24
+  fields:
+    title: "背筋"
+    description: "10回3セット"
+    author: 3
+    is_complete: false
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 25
+  fields:
+    title: "スクワット"
+    description: "10回3セット"
+    author: 3
+    is_complete: true
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 26
+  fields:
+    title: "ベンチプレス"
+    description: "10回3セット"
+    author: 3
+    is_complete: false
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 27
+  fields:
+    title: "バタフライ"
+    description: "10回3セット"
+    author: 3
+    is_complete: true
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 28
+  fields:
+    title: "レッグカール"
+    description: "10回3セット"
+    author: 3
+    is_complete: false
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 29
+  fields:
+    title: "ダンベルカール"
+    description: "10回3セット"
+    author: 3
+    is_complete: true
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 30
+  fields:
+    title: "バックプレス"
+    description: "10回3セット"
+    author: 3
+    is_complete: false
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 31
+  fields:
+    title: "懸垂"
+    description: "10回3セット"
+    author: 3
+    is_complete: true
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 32
+  fields:
+    title: "デッドリフト"
+    description: "10回3セット"
+    author: 3
+    is_complete: false
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00
+- model: tasks.task
+  pk: 33
+  fields:
+    title: "柔軟体操"
+    description: "特になし"
+    author: 3
+    is_complete: true
+    created_at: 2021-01-01 13:07:28.965952+00:00
+    updated_at: 2021-01-01 13:07:28.965984+00:00

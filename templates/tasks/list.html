@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}タスク一覧{% endblock title %}
+
+{% block contents %}
+  <h1>タスク一覧</h1>
+  {% for task in task_list %}
+    <p><a href="{% url 'tasks:detail' task.pk %}">{{ task.title }}</a></p>
+  {% empty %}
+    <p>現在、作成されたタスクはございません。</p>
+  {% endfor %}
+  <p><a href="{% url 'tasks:create' %}">タスクを作成</a></p>
+{% endblock contents %}
+
